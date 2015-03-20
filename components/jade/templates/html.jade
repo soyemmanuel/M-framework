@@ -1,0 +1,60 @@
+doctype
+html.no-js
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title
+			block title
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		block description
+		link(rel='stylesheet', href='css/style.css')
+	body
+	<!--[if lt IE 8]>
+	p.browsehappy
+		| Estas usando un navegador <strong>Obsoleto</strong>.
+		| Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a>
+		| para mejorar tu experiencia.
+	<![endif]-->
+	.wrap
+		header
+			nav.standard
+				.logo
+					h1 M Framework
+					h3 Top Speed development
+				ul.menu
+					li
+						a(href="#") Link 1
+					li
+						a(href="#") Link 2
+					li
+						a(href="#") Link 3
+					li
+						a(href="#") Link 4
+
+		main.standard
+			h1 M Framework
+			
+			h2 Framework para el rapido desarrollo Frontend
+
+			p 
+
+				| Hecho con Jade, Stylus, coffescript y Gulp.
+				| Sistema de grids solo con css
+
+
+		section
+			block grids
+
+		//-script(src='javascripts/script.js')
+		//- Google Analytics: change UA-XXXXX-X to be your site's ID.
+		//-
+			script
+			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+			e.src='//www.google-analytics.com/analytics.js';
+			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+			ga('create','UA-XXXXX-X');ga('send','pageview');
+
+	footer.footer
+		p Sticky footer

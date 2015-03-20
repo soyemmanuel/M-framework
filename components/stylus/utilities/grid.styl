@@ -1,0 +1,215 @@
+/*
+*    Clases para generar M Grid
+*/
+
+
+
+
+
+/*=====================*\
+   Estilos opcionales
+\*=====================*/
+
+.columna
+	h2
+		color $blanco
+		margin 0
+		font-size 80%
+		text-align center
+
+
+/*=====================*\
+   * Estilos de Grid *
+\*=====================*/
+
+.fila
+	width 90%
+	margin 1em auto
+	overflow hidden
+	width 90%
+
+.columna
+	background-color $peterriver
+	box-sizing border-box
+	float left
+	margin-right 2%
+	padding 1em
+	
+
+.columna	
+	width 100%
+
+
+
+
+/*=====================*\
+    * Media Queries *
+\*=====================*/
+
+// Small > 30em
+@media (min-width: $bp1)
+
+	/*=====================*\
+	    * 4 y 6 columnas
+	    son 2 en small *
+	\*=====================*/
+
+	.cuatro-columnas,
+	.seis-columnas
+		
+		.columna
+			width 49%
+			
+			&:nth-child(2n)
+				margin-right 0
+
+
+
+	/*=====================*\
+	    * Doce Columnas *
+	\*=====================*/
+
+	.doce-columnas
+		
+		.columna
+			width 32%
+			
+			&:nth-child(3n)
+				margin-right 0
+	
+
+
+
+
+
+// Medium 48em
+@media (min-width: $bp3)
+
+	/*=====================*\
+	    * Sidebar *
+	\*=====================*/
+
+	.sidebar
+		width 23.5%
+			
+	.content
+		width 74.5%
+
+	.right-sidebar
+		
+		.sidebar
+			margin-right 0
+
+	.left-sidebar
+
+		.content
+			margin-right 0
+
+
+	/*=====================*\
+	    * Tres Columnas *
+	\*=====================*/
+
+	.tres-columnas
+		
+		.columna
+			width 32%
+			
+			&:nth-child(3n)
+				margin-right 0
+
+	/*=====================*\
+	    * Seis Columnas *
+	\*=====================*/
+
+
+	.seis-columnas
+		
+		.columna
+			width 15%
+			
+			&:nth-child(2n)
+				margin-right 2%
+
+			&:nth-child(6n)
+				margin-right 0
+
+
+	/*===============================*\
+	         * Doce Columnas *
+	   doce columnas son 4 en medium
+	\*===============================*/
+
+	.doce-columnas
+		
+		.columna
+			width 23.5%
+						
+			&:nth-child(3n)
+				margin-right 2%
+
+			&:nth-child(4n)
+				margin-right 0			
+
+
+
+// large 68.5em
+@media (min-width: $bp5)
+
+
+	/*=====================*\
+	    * Dos Columnas *
+	\*=====================*/
+
+	.dos-columnas
+
+		.columna
+			width 49%
+		
+			&:nth-child(2n)
+				margin-right 0
+
+
+	/*=====================*\
+	    * Cuatro Columnas *
+	\*=====================*/
+
+
+	.cuatro-columnas
+		
+		.columna
+			width 23.5%
+			
+			&:nth-child(2n)
+				margin-right 2%
+				
+			&:nth-child(4n)
+				margin-right 0
+			
+
+
+	/*=====================*\
+	    * Doce Columnas *
+	\*=====================*/
+
+	.doce-columnas
+		
+		.columna
+			width 6.5%
+			
+			&:nth-child(4n)
+				margin-right 2%
+			
+			&:nth-child(8n)
+				margin-right 2%
+
+			&:nth-child(12n)
+				margin-right 0
+
+
+
+
+
+
+
+

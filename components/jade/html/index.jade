@@ -1,0 +1,100 @@
+extends ../templates/html
+
+block title
+	| Grid System
+
+block description
+
+	meta(name='description', content='Sistema de Grids, desde cero')
+
+block grids
+
+	//- Fila 100%
+	.fila.total
+		.columna
+			h2 Top
+	
+	//- Dos Columnas
+	.fila.dos-columnas
+		.columna
+			h2.title columna1
+		.columna
+			h2.title columna2
+
+	//- Cuatro Columnas
+	.fila.cuatro-columnas
+		.columna
+			h2.title columna 1
+		.columna
+			h2.title columna 2
+		.columna
+			h2.title columna 3
+		.columna
+			h2.title columna 4
+
+	//- Sidebar derecho
+	.fila.right-sidebar
+		.content.columna
+			h2.title Content
+		aside.sidebar.columna
+			h2.title right sidebar
+
+	//- Sidebar Izquierdo
+	.fila.left-sidebar
+		aside.sidebar.columna
+			h2.title left sidebar
+		.content.columna
+			h2.title Content
+
+	//- Tres Columnas
+	.fila.tres-columnas
+		.columna
+			h2.title columna 1
+		.columna
+			h2.title columna 2
+		.columna
+			h2.title columna 3
+
+	//- Seis Columnas
+	.fila.seis-columnas
+		.columna
+			h2.title C 1
+		.columna
+			h2.title C 2
+		.columna
+			h2.title C 3
+		.columna
+			h2.title C 4
+		.columna
+			h2.title C 5
+		.columna
+			h2.title C 6
+
+	//- Doce Columnas
+	.fila.doce-columnas
+		.columna
+			h2.title C 1
+		.columna
+			h2.title C 2
+		.columna
+			h2.title C 3
+		.columna
+			h2.title C 4
+		.columna
+			h2.title C 5
+		.columna
+			h2.title C 6
+		.columna
+			h2.title C 7
+		.columna
+			h2.title C 8
+		.columna
+			h2.title C 9
+		.columna
+			h2.title C 10
+		.columna
+			h2.title C 11
+		.columna
+			h2.title C 12
+
+

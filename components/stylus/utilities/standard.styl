@@ -1,0 +1,103 @@
+/*
+*    Estilos standard
+*/
+
+
+/*====================*\
+    Etiqutas standard
+\*====================*/
+html,
+body
+	height 100%
+
+
+a
+	text-decoration none
+	
+	&:hover
+		text-decoration underline
+		
+figure
+	margin 0
+	
+img
+	max-width 100%
+	height auto
+	
+
+/*====================*\
+    Alineaciones
+\*====================*/
+
+// vertical-align middle
+.vam
+	display inline-block  !important
+	vertical-align middle
+
+
+// vertical-align top
+.vat
+	display inline-block
+	vertical-align middle
+
+
+// vertical-align bottom
+.vab
+	display inline-block
+	vertical-align middle
+
+/*====================*\
+    Clases standard
+\*====================*/
+
+// Para el footer siempre abajo
+
+.wrap
+	min-height  100%
+	/* Igual a la altura del footer */
+	margin-bottom -70px
+	position relative
+	
+	&:after
+		content ""
+		display block
+
+.wrap:after,
+.footer
+	height 70px
+
+.footer
+	background-color $wetasphalt
+	color $blanco
+	padding 1em
+	text-align center
+	max-width 100%
+
+
+
+// Contenido centrado
+.standard
+	max-width 60em
+	margin 0 auto
+
+
+
+// Clase Menú
+.menu
+	list-style-type none
+	margin 0
+	padding 0
+	
+	li
+		display inline-block
+		vertical-align top
+		
+		a
+			display block
+			padding 1em
+			height 100%
+			width 100%
+
+	
+
+
